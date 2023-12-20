@@ -117,4 +117,9 @@ aside{
    margin-left: auto;
    margin-right: auto;
 }
-
+.tabl{
+    height: 200vh;
+    width: 50vw;
+    border-width: 10px;
+    border-style:groove
+}
