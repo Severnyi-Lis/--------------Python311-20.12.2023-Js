@@ -13,10 +13,10 @@ function calculateBMI() {
     let result = document.querySelector("#result");
 
     if (height === "" || isNaN(height)) 
-        result.innerHTML = "Введите значение!";
+        result.innerHTML = "Введите значение роста!";
 
     else if (weight === "" || isNaN(weight)) 
-        result.innerHTML = "Введите значение!";
+        result.innerHTML = "Введите значение веса!";
 
     else {
         let bmi = (weight / ((height * height) 
