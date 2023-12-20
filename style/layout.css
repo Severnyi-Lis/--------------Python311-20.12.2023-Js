@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+}
+.box{
+    text-align: center;
+    font-size: x-large;
+}
+header{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: cursive;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height:200vh;
+    width: 50vw;
+    text-align: center;
+    font-family: cursive;
+}
+div{
+    display: flex;
+}
+#result{
+    text-align: center;
+    font-size: x-large;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 5em;
+}
+#height{
+    width: 10vw;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 10em;
+}
+#height_1{
+    width: 10vw;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 5em;
+}
+#weight{
+    width: 10vw;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 10em;      
+}
+#weight_1{
+    width: 10vw;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 5em;      
+}
+#age{
+    width: 10vw;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 5em;      
+}
+#activity{
+    width: 10vw;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 5em;   
+}
+#btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 10vw;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.set_2{
+    position: relative;
+    top: 2vh;
+}
+footer{
+    height: 18vh;
+    width: auto;
+    text-align: center;
+    font-family: cursive;
+}
+aside{
+    font-family: cursive;
+}
+#pol{
+   position: relative;
+   bottom:7em;
+   margin-left: auto;
+   margin-right: auto;
+}
+

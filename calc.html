@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Калькулятор калорий</title>
+        <script src='style/task.js'></script>
+        <link href="style/appearance.css"
+        rel="stylesheet">
+        <link href="style/layout.css"
+        rel="stylesheet">
+    </head>
+    <body>
+            <header>
+                <nav class="box"><p>Калькулятор</p>
+                   <p>калорий</p>
+            </header>
+            <div>
+                <article>
+                    <h1>Расчет индекса массы тела</h1>
+                    <label for="height">Ваш рост ( в см)</label>
+                    <input type="text" id="height" placeholder="Введите рост">
+                    <label for="weight">Ваш вес (в кг)</label>       
+                    <input type="text" id="weight" placeholder="Введите вес">       
+                    <button id="btn">Рассчитать</button>
+                    <div id="result">
+                    </div>
+                </article>
+                <article>
+                    <h1>Расчет калорий в день</h1>
+                    <p>Укажите ваш пол</p>
+                        <div id="pol">
+                            <label for="stick_r"><p>мужской</p></label><input type="radio" id="stick_r" name="subject">
+                            <label for="stick_l">женский</label> <input type="radio" id="stick_l" name="subject">
+                        </div>
+                        <label for="height_1">Ваш рост ( в см)</label>
+                        <input type="number" min="1" id="height_1" placeholder="Укажите рост">
+                        <label for="weight_1">Ваш вес (в кг)</label>       
+                        <input type="number" min="1" id="weight_1" placeholder="Укажите вес">
+                        <label for="age">Ваш возраст</label>
+                        <input type="number" min="1" max="150" id="age" placeholder="Укажите возраст">
+                        <label for="activity">Сколько раз тренируетесь в неделю</label>
+                        <input list='learn' id="activity" name="activity" placeholder="Уровень активности">
+                          <datalist id='learn'>
+                        <option>Не тренируюсь</option>
+                        <option>Один раз в неделю</option>
+                        <option>Три раза в неделю</option>
+                        <option>Пять раз в неделю</option>
+                        <option>Тренируюсь каждый день</option>
+                     </datalist>
+                </article>
+            </div>
+            <footer>
+                <p>Продолжая использовать этот сайт, вы даете согласие на обработку файлов Cookies и других пользовательских данных,</p> 
+                <p>в соответствии с Политикой конфиденциальности и Пользовательским соглашением</p>
+                <p class="set_2">©calc-vash-ves.ru  12+</p>
+                <p class="set_2">Все права защищены</p>
+                <p class="set_2">xnestro@mail.ru</p>
+            </footer>
+    </body>
+</html>
+
+
