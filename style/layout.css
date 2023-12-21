@@ -23,9 +23,6 @@ article{
     font-family: cursive;
     z-index: 2;
 }
-#calc_2{
-    z-index: 2;
-}
 div{
     display: flex;
 }
