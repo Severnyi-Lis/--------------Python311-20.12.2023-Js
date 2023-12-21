@@ -10,3 +10,7 @@ footer{
 aside{
     background-color: aqua;
 }
+.snowflake {
+    color: skyblue;
+    text-shadow: 0 0 1px #000;
+}
