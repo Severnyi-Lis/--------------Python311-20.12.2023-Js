@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <meta charset="UTF-8" />
+        <meta charset="UTF-8">
         <title>Калькулятор калорий</title>
         <script src='style/task.js'></script>
         <link href="style/appearance.css"
@@ -13,6 +13,13 @@
             <header>
                 <nav class="box"><p>Калькулятор</p>
                    <p>калорий</p>
+                     <img src="photo/ель2.png"
+                      alt="ель"
+                      class="tree">
+                     <img src="photo/ель2.png"
+                      alt="ель"
+                      class="tree_2">
+                </nav>
             </header>
             <div>
                 <article class="tabl">
@@ -27,26 +34,38 @@
                 </article>
                 <article class="tabl">
                     <h1>Расчет калорий в день</h1>
+                    <section>
                     <p>Укажите ваш пол</p>
                         <div id="pol">
-                            <label for="stick_r"><p>мужской</p></label><input type="radio" id="stick_r" name="subject">
-                            <label for="stick_l">женский</label> <input type="radio" id="stick_l" name="subject">
+                            <label for="gender">мужской</label><input type="radio" id="gender" name="gender_z" value="man" checked>
+                            <label for="gender_2">женский</label> <input type="radio" id="gender_2" name="gender_z" value="woman">
                         </div>
+                    </section>
+                    <section>
                         <label for="height_1">Ваш рост ( в см)</label>
                         <input type="number" min="1" id="height_1" placeholder="Укажите рост">
+                    </section>
+                    <section>
                         <label for="weight_1">Ваш вес (в кг)</label>       
                         <input type="number" min="1" id="weight_1" placeholder="Укажите вес">
+                    </section>
+                    <section>
                         <label for="age">Ваш возраст</label>
                         <input type="number" min="1" max="150" id="age" placeholder="Укажите возраст">
-                        <label for="activity">Сколько раз тренируетесь в неделю</label>
-                        <input list='learn' id="activity" name="activity" placeholder="Уровень активности">
-                          <datalist id='learn'>
-                        <option>Не тренируюсь</option>
-                        <option>Один раз в неделю</option>
-                        <option>Три раза в неделю</option>
-                        <option>Пять раз в неделю</option>
-                        <option>Тренируюсь каждый день</option>
-                     </datalist>
+                    </section>
+                    <section>
+                        <label>Сколько раз тренируетесь в неделю</label>
+                        <select id="a">
+                            <option value="1.2">Не тренируюсь</option>
+                            <option value="1.38">Один раз в неделю</option>
+                            <option value="1.46">Три раза в неделю</option>
+                            <option value="1.55">Пять раз в неделю</option>
+                            <option value="1.64">Тренируюсь каждый день</option>
+                         </select>
+                    </section>
+                         <input type="button" value="Расчет калорий" id="normal_2" onclick="calcbmr()">
+                         <label>Количество калорий</label>
+                         <p id="normal"></p>
                 </article>
             </div>
             <footer>

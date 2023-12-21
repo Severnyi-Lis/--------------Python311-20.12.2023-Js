@@ -29,4 +29,22 @@ function calculateBMI() {
         else result.innerHTML =
             `Избыточный вес : <span>${bmi}</span>`;
     }
+} 
+function calcbmr() {
+  var age = document.getElementById("age").value;
+  var height_1 = document.getElementById("height_1").value;
+  var weight_1 = document.getElementById("weight_1").value;
+  var a = document.getElementById("a").value;
+
+  var weight_1=parseInt(weight_1);
+  var age=parseInt(age);
+  var height_1= parseInt(height_1)
+  if (document.getElementById('gender').checked){
+   var result= ((10 * weight_1) + (6.25 * height_1) - (5 * age) + 5) * a ;
+  }else if(document.getElementById('gender_2').checked){
+   var result= ((10 * weight_1) + (6.25 * height_1) - (5 * age) - 161) * a;
+  }
+  normal.innerHTML = result;
+  return result; 
 }
+
