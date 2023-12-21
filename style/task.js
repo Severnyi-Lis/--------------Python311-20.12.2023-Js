@@ -1,3 +1,7 @@
+/*Этот код позаимтсвовал из интернета*/
+/*Не понял почему перестает нормально работать если поставить form,
+при нажатии кнопки "рассчитать" открывается путь на мой диск С,поэтому я не стал ставить form
+также пока что можно?*/
 window.onload = () => {
     let button = document.querySelector("#btn");
     button.addEventListener("click", calculateBMI);
@@ -30,6 +34,7 @@ function calculateBMI() {
             `Избыточный вес : <span>${bmi}</span>`;
     }
 } 
+/*Этот код писал сам*/
 function calcbmr() {
   var age = document.getElementById("age").value;
   var height_1 = document.getElementById("height_1").value;
